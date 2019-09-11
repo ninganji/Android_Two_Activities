@@ -14,8 +14,7 @@
 
         <activity
             android:name=".SecondActivity"
-            android:label="Second Activity"
-            android:parentActivityName=".MainActivity">
+            android:label="Second Activity" >
 
             <meta-data
                 android:name="android.support.Parent_Activity"
