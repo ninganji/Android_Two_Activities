@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_header_reply"
+        android:visibility="invisible"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
