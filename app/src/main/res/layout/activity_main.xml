@@ -3,8 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_header_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_header_reply"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/text_message_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header_reply"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/button_main"
@@ -15,4 +29,15 @@
         android:layout_alignParentBottom="true"
         android:onClick="launchSecondActivity"
         android:text="@string/button_main" />
+
+    <EditText
+        android:id="@+id/editText_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button_main"
+        android:layout_toLeftOf="@id/button_main"
+        android:ems="10"
+        android:hint="@string/editText_main"
+        android:inputType="textPersonName" />
 </RelativeLayout>
